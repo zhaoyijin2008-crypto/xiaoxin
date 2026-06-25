@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>蜡笔小新 · 大象舞</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 背景客厅 -->
+  <div class="room">
+    <div class="wall"></div>
+    <div class="window">
+      <div class="window-frame">
+        <div class="sky"></div>
+        <div class="sun"></div>
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+      </div>
+      <div class="curtain left"></div>
+      <div class="curtain right"></div>
+    </div>
+    <div class="tv">
+      <div class="tv-screen">
+        <div class="tv-text">ACTION MASK</div>
+      </div>
+      <div class="tv-stand"></div>
+    </div>
+    <div class="sofa">
+      <div class="sofa-back"></div>
+      <div class="sofa-seat"></div>
+      <div class="sofa-arm left"></div>
+      <div class="sofa-arm right"></div>
+    </div>
+    <div class="floor"></div>
+    <div class="rug"></div>
+  </div>
+
+  <!-- 标题 -->
+  <header class="game-header">
+    <h1 class="title">蜡笔小新<span>大象舞</span></h1>
+    <p class="subtitle">点击小新，让他跳舞！</p>
+  </header>
+
+  <!-- 音量开关 -->
+  <button class="sound-btn" id="soundBtn" aria-label="切换声音">
+    <span class="sound-icon" id="soundIcon">🔊</span>
+  </button>
+
+  <!-- 小新角色 -->
+  <div class="shinchan-wrap" id="shinchan" role="button" tabindex="0" aria-label="点击让小新跳舞">
+    <div class="shinchan" id="shinchanChar">
+
+      <!-- 头部 -->
+      <div class="head">
+        <div class="face">
+          <!-- 眉毛 -->
+          <div class="eyebrow left"></div>
+          <div class="eyebrow right"></div>
+          <!-- 眼睛 -->
+          <div class="eye left"><div class="pupil"></div><div class="blink"></div></div>
+          <div class="eye right"><div class="pupil"></div><div class="blink"></div></div>
+          <!-- 鼻子 -->
+          <div class="nose"></div>
+          <!-- 嘴巴 -->
+          <div class="mouth"><div class="mouth-inner"></div></div>
+          <!-- 腮红 -->
+          <div class="cheek left"></div>
+          <div class="cheek right"></div>
+        </div>
+        <!-- 头发 -->
+        <div class="hair">
+          <div class="hair-strand s1"></div>
+          <div class="hair-strand s2"></div>
+          <div class="hair-strand s3"></div>
+        </div>
+        <!-- 耳朵 -->
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+      </div>
+
+      <!-- 身体 -->
+      <div class="body-wrap">
+        <div class="body">
+          <!-- 上衣 -->
+          <div class="shirt">
+            <div class="shirt-collar"></div>
+          </div>
+          <!-- 手臂 -->
+          <div class="arm left">
+            <div class="hand"></div>
+          </div>
+          <div class="arm right">
+            <div class="hand"></div>
+          </div>
+        </div>
+        <!-- 裤子 -->
+        <div class="pants">
+          <div class="leg left">
+            <div class="shoe"></div>
+          </div>
+          <div class="leg right">
+            <div class="shoe"></div>
+          </div>
+        </div>
+        <!-- 屁股（大象舞核心！）-->
+        <div class="butt"></div>
+      </div>
+
+    </div>
+    <!-- 点击提示 -->
+    <div class="click-hint" id="clickHint">👆 点我！</div>
+  </div>
+
+  <!-- 舞蹈特效文字 -->
+  <div class="dance-text" id="danceText"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
